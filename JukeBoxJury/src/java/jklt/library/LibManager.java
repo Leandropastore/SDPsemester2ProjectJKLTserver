@@ -49,12 +49,13 @@ public class LibManager {
 
     public Music createMusic(String line) {
 
-        String fileName;
+        String filePath;
         String tid;
+        String cid;
         
         if(line!=null){
             String[] tokens = line.split("");
-            return new Music(fileName,tid);
+            return new Music(filePath,tid);
         }
         else
             return null;
